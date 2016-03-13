@@ -1,9 +1,17 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class MainGencle {
 
-    public static void main(String[] args){
-        int blocSize = 512;
-        String name = "chr";
+    private static BufferedReader inputReader;
+
+    public static void main(String[] args) throws IOException {
+        inputReader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Veuillez saisir la taille des blocks (int) :");
+        int blocSize = Integer.parseInt(inputReader.readLine());
+        System.out.println("Veuillez saisir le nom du destinataire :");
+        String name = inputReader.readLine();
         Gencle gencle = new Gencle("chr", blocSize);
         System.out.println("# Generating RSA keys for bloc size "+blocSize+" bits");
         gencle.generateRandomKeyPairOfPrimeNumbers();

@@ -41,7 +41,7 @@ public class Gencle {
     public void storeKeysInFiles(){
         String text = "size:"+t+"\nn:"+primeKeyPairProduct()+"\nb:"+normalKeyPairB();
         storeData("pub", text);
-        text += "\np:"+primeKeyPair.getP()+"\nq:"+primeKeyPair.getQ()+"\na"+normalKeyPair.getA();
+        text += "\np:"+primeKeyPair.getP()+"\nq:"+primeKeyPair.getQ()+"\na:"+normalKeyPair.getA();
         storeData("priv", text);
     }
 
