@@ -14,6 +14,9 @@ Pour tester Gencle, il faut executer la classe MainGencle. Il s'agit d'un script
 Ce script permet donc de générer les clés publiques et privées pour un utilisateur (en fonction du nom de destinataire choisi) et de les sauvegarder dans des fichiers:
     -<name>.pub
     -<name>.priv
+Il reste un problème dans ce script, c'est qu'il ne fonctionne pas à chaque execution. Nous pensions avoir réglé le problème mais nous avons toujours l'exception suivante:
+Exception in thread "main" java.lang.ArithmeticException: BigInteger not invertible.
+Nous avons essayé la génération aléatoire pour la clé b avec un modulo phi(n), mais l'exception est toujours présente. Il faut donc executer les script jusqu'a son fonctionnement pour générer une paire de clé.
 
 
 
