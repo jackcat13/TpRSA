@@ -2,7 +2,15 @@ Code fait en Java. Tous les fichiers sources sont dans le même dossier et peuve
 
 4. Quelques fonctions de base pour RSA
 
+4.1 Primalité par test de Miller-Rabin
 
+Deux méthodes sont utilisées pour tester si un nombre est premier :
+    - testMillerRabin : Coeur du test de MillerRabin
+    - estPremierRapide : a pour paramètre un entier n (celui dont on veut tester la primalité) et k un autre entier qui représente le nombre de fois que l'on veut appeler la méthode.
+Cette méthode génère un nombre aléatoire de la longueur de l'entier saisi et appelle donc testMillerRabin k fois avec pour paramètre l'entier saisi et le nombre aléatoire généré.
+
+Pour lancer le script il faut saisir le nombre dont on veut connaitre la primalité et le nombre de fois dont on veut lancer la méthode "testMillerRabin" de primalité.
+Mettre un nombre suffisant pour plus de probabilité de véracité du résultat.
 
 5. Mise en oeuvre de RSA
 

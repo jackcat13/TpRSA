@@ -11,15 +11,6 @@ public class MainMillerRabin {
         boolean estPremier=false;
 
         inputReader = new BufferedReader(new InputStreamReader(System.in));
-        /*System.out.println("Veuillez saisir le nombre que vous voulez tester :");
-        String chaine = inputReader.readLine();
-        BigInteger nb = new BigInteger(chaine);
-        if (estPremier == testMillerRabin(nb)){
-            System.out.println("test de MillerRabin indique que le nombre est probablement Premier");
-        }
-        else{
-            System.out.println("test de MillerRabin indique que le nombre est composite");
-        }*/
         System.out.println("Veuillez saisir le nombre que vous voulez tester :\n");
         String chaine2 = inputReader.readLine();
         BigInteger x = new BigInteger(chaine2);
